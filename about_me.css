@@ -1,75 +1,130 @@
-#body {
-	padding: 2em;
+body {
+  padding:0.9em;
 	font-family: Times;
 }
 
-
-#header {
-	z-index: 1;
-	position: relative;
-	margin-top: 50px;
-	margin-bottom: 10px;
-	margin-right: 2px;
-	margin-left: 2px;
-	height: 80px;
-	background-color: #668284;
-	border-radius: 25px;
-	padding: 5px;
+.header.row {
+  display: flex;
+  align-items: center;
 }
 
-#footer {
-	z-index: 1;
-	position: relative;
-	height: 60px;
-	margin-top: -20px;
-	margin-bottom: 10px;
-	background-color: #668284;
-	clear: both;
-	font-family: Verdana, sans-serif;
-	font-size: 14px;
-	color: #ffffff;
-	border-radius: 15px;
-	padding: 5px;
+.header ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.header .col-sm-12 a {
+  border-radius: 1em;
+  margin: 8px;
+  width: 170px;
+  height: 50px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  -o-transition: all ease 0.5s;
+  -ms-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  display: block;
+  padding: 8px;
+}
+
+.header .col-sm-12 a:hover {
+  margin: 0px;
+  box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
+  background-color: #eee;
+}
+
+.header p {
+    float: left;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
-#introduction {
-	margin-top: 20px;
-	margin-bottom: 10px;
-	margin-right: 2px;
-	margin-left: 2px;
-	height: 100%;
-	background-color: #668284;
-	border-radius: 50px;
-	padding: 30px;
+.header {
+  padding-top: 1em;
 }
 
 
-.left {
-	position: relative;
-	float: left;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 10%;
-	height: 1160px;
-	background-color: #B9D7D9;
-	border-radius: 50px 50px 50px 50px;
-	padding: 20px;
+.jumbotron {
+    display: flex;
+    background-image: url(Digital-Tunnel.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+    height: 20em;
+    text-align: left;
+    background-color: rgb(51, 92, 153);
 }
 
-.right {
-	position: relative;
-	float: right;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	width: 88%;
-	height: 1160px;
-	background-color: #F4EBC3;
-	border-radius: 15px 50px 50px 15px;
-	padding: 20px;
+.jumbotron > .container {
+  color: gray;
+  padding-bottom: 20px;
+  margin-top: 100px;
+  text-align: left;
 }
 
-.pic {
-	width: 10%;
-	height: 1160px; 
+.jumbotron > .container h1 {
+  text-shadow:1px 1px 0px white;
+}
+
+div > img {
+	width: 10em;
+	height: 10em;
+	border-radius: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+	align-items: center;
+}
+
+.aboutme, .education, .skillsCerticiations, .experience, .specialSkills {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05);
+}
+
+#aboutme, #education, #skillsCerticiations, #experience, #specialSkills {
+  border-bottom: 1px solid lightgray;
+}
+
+
+.footer {
+    background-color: rgb(245, 245, 245);
+    background-image: linear-gradient(rgb(232, 232, 232) 0px, rgb(245, 245, 245) 100%);
+    background-repeat: repeat-x;
+    box-shadow: inset 0px 1px 3px rgba(0,0,0,0.05), 0px 1px 0px rgba(255,255,255,0.1);
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin-top: 20px;
+  }
+
+
+.footer .col-sm-12 img {
+	border-radius: 50%;
+	margin: 8px;
+	width: 50px;
+	box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.8);
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}
+
+
+.footer .col-sm-12 {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .col-sm-12 img:hover {
+	margin: 0px;
+	box-shadow: 6px 6px 4px 4px rgba(0,0,0,0.3);
 }
